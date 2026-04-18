@@ -1,6 +1,6 @@
 ---
 title: Hello World
-date: 2026-04-19 02:00:00 +0900
+date: 2026-04-18 12:00:00 +0900
 categories: [Meta]
 tags: [launch]
 ---
