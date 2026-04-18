@@ -104,7 +104,8 @@ if PEXELS_API_KEY:
 
 
 # === 4. Build the markdown post ===
-now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))  # KST
+utc_now = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=1)
+now = utc_now.astimezone(datetime.timezone(datetime.timedelta(hours=9)))  # KST
 date_display = now.strftime("%Y-%m-%d %H:%M:%S +0900")
 date_slug = now.strftime("%Y-%m-%d")
 
