@@ -3,7 +3,7 @@ name: Auto Post Blog
 on:
   schedule:
     # Mondays + Thursdays at 00:00 UTC = 9am Korea time
-    - cron: '0 0 * * 1,4'
+    - cron: '0 0 * * *'
   workflow_dispatch:  # allows manual "Run" button
 
 jobs:
