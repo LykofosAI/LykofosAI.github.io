@@ -66,14 +66,6 @@ raw = re.sub(r"\n?```\s*$", "", raw)
 try:
     data = json.loads(raw)
 except json.JSONDecodeError:
-    # Try extracting content field separately to handle newlines
-    content_match = re.search(r'"content"\s*:\s*"(.*?)"\s*\}', raw, re.DOTALL)
-    if content_match:
-        content_block = content_match.group(1)
-        safe = raw[:content_match.start()] + '"content": ""}'
-        data = json.loads(safe)
-        data["content"] = content_block.replace('\\"', '"')
-    else:
     print("Gemini returned invalid JSON:")
     print(raw[:500])
     raise
