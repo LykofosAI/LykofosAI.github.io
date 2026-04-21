@@ -64,7 +64,7 @@ raw = re.sub(r"^```(?:json)?\s*\n?", "", raw)
 raw = re.sub(r"\n?```\s*$", "", raw)
 
 try:
-    data = json.loads(raw)
+    data = json.loads(raw.replace('\r\n', '\\n').replace('\n', '\\n').replace('\r', '\\n'))
 except json.JSONDecodeError:
     print("Gemini returned invalid JSON:")
     print(raw[:500])
