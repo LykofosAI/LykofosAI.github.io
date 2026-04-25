@@ -409,16 +409,38 @@ html:not([data-mode]) pre code {
   content: none !important;
 }
 
-/* Tagline (site-subtitle) wrap nicely if it ever gets longer */
+/* Tagline (site-subtitle) — force wrap, kill the nowrap/ellipsis baked into Chirpy */
 #sidebar #site-subtitle,
-#sidebar .site-subtitle {
+#sidebar p#site-subtitle,
+#sidebar .site-subtitle,
+#sidebar p.site-subtitle,
+.sidebar #site-subtitle,
+.sidebar .site-subtitle,
+#site-subtitle,
+p#site-subtitle,
+.site-subtitle,
+p.site-subtitle {
   white-space: normal !important;
   overflow: visible !important;
   text-overflow: clip !important;
-  word-wrap: break-word;
-  font-size: 0.85em;
-  line-height: 1.4;
-  padding: 0 0.5rem;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  hyphens: auto;
+  font-size: 0.82em !important;
+  line-height: 1.45 !important;
+  padding: 0 0.6rem !important;
+  width: auto !important;
+  max-width: 100% !important;
+  text-align: center;
+}
+
+/* Make sure the sidebar profile container doesn't clip overflow */
+#sidebar .profile-wrapper,
+#sidebar #avatar,
+#sidebar .site-title-wrapper,
+.sidebar > * {
+  overflow: visible !important;
 }
 
 /* ---------- 20. 2-column (2x2) post grid on home ---------- */
