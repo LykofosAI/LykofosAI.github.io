@@ -1,0 +1,239 @@
+---
+---
+
+@import "main";
+
+/* =============================================================
+   LykofosAI — Sophisticated Minimalist Redesign (Phase 1)
+   Palette: Titanium & Slate
+   Accents: Deep Forest Green (#2d3a3a) + Champagne (#c5b358)
+   Typography: Playfair Display (headings) + Inter (body)
+   ============================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ---------- 1. Color palette overrides ---------- */
+
+:root {
+  --champagne: #c5b358;
+  --deep-forest: #2d3a3a;
+}
+
+html[data-mode='light'],
+html:not([data-mode]) {
+  --main-bg: #ffffff;
+  --mask-bg: #f7f7f7;
+  --topbar-bg: rgba(255, 255, 255, 0.72);
+  --card-bg: #ffffff;
+  --card-border-color: rgba(197, 179, 88, 0.18);
+  --card-box-shadow: 0 4px 20px rgba(20, 20, 20, 0.04);
+  --link-color: #2d3a3a;
+  --link-underline-color: #c5b358;
+  --text-color: #1f2937;
+  --text-muted-color: #5c6b73;
+  --heading-color: #0f1418;
+  --blockquote-border-color: #c5b358;
+  --blockquote-text-color: #2d3a3a;
+  --btn-border-color: #c5b358;
+  --tag-hover: #c5b358;
+}
+
+html[data-mode='dark'] {
+  --main-bg: #121212;
+  --mask-bg: #1a1a1a;
+  --topbar-bg: rgba(18, 18, 18, 0.72);
+  --card-bg: #1a1a1a;
+  --card-border-color: rgba(197, 179, 88, 0.20);
+  --card-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --link-color: #b8c9c9;
+  --link-underline-color: #c5b358;
+  --text-color: #d8dee2;
+  --text-muted-color: #9ba6ad;
+  --heading-color: #f3f4f6;
+  --blockquote-border-color: #c5b358;
+  --blockquote-text-color: #b8c9c9;
+  --btn-border-color: #c5b358;
+  --tag-hover: #c5b358;
+}
+
+/* ---------- 2. Typography ---------- */
+
+body,
+.post-content,
+#sidebar,
+#topbar,
+.btn,
+input,
+button,
+select,
+textarea {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.preview-title,
+#site-title {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif !important;
+  letter-spacing: 0.015em;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+h1, .post-title { letter-spacing: -0.005em; font-weight: 700; }
+h2 { letter-spacing: 0.01em; }
+
+#site-title { letter-spacing: 0.04em; font-weight: 500; }
+
+.post-meta,
+.post-tag,
+.tag,
+.timeago,
+.label,
+time {
+  font-family: 'Inter', sans-serif !important;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78em;
+  font-weight: 500;
+}
+
+/* Body text: editorial reading rhythm */
+.post-content p,
+.post-content li {
+  font-size: 1.02rem;
+  line-height: 1.78;
+  color: var(--text-color);
+}
+
+/* ---------- 3. Layout: 800px max-width for post content ---------- */
+
+#main-wrapper > .container > .row > main,
+#post-wrapper,
+.post-content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- 4. UI: Glassmorphism on sticky topbar ---------- */
+
+#topbar {
+  background: var(--topbar-bg) !important;
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  border-bottom: 1px solid rgba(197, 179, 88, 0.12);
+  transition: background 0.3s ease;
+}
+
+#topbar-wrapper {
+  background: transparent !important;
+}
+
+/* ---------- 5. Rounded corners (8px) ---------- */
+
+.preview-img,
+.post-content img,
+#avatar,
+.card,
+.card-wrapper,
+.code-header + pre,
+pre,
+.tag-cloud-tag,
+.btn,
+input.form-control,
+#search-result-wrapper,
+#search-input {
+  border-radius: 8px !important;
+}
+
+#avatar { border-radius: 50% !important; }
+
+.preview-img img,
+.post-content figure img {
+  border-radius: 8px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.preview-img:hover img {
+  transform: scale(1.015);
+}
+
+/* ---------- 6. Accent details (champagne underlines, deep forest links) ---------- */
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  background-image: linear-gradient(var(--link-underline-color), var(--link-underline-color));
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.25s ease;
+}
+
+a:hover {
+  background-size: 100% 1px;
+  color: var(--link-color);
+}
+
+/* Don't apply underline animation to nav, buttons, cards, or images */
+#sidebar a,
+#topbar a,
+.btn,
+.preview-img,
+.post-preview a,
+.post-tag,
+a.tag,
+.card a,
+#search-results a {
+  background-image: none !important;
+}
+
+/* Blockquotes — magazine pull-quote feel */
+blockquote {
+  border-left: 3px solid var(--blockquote-border-color) !important;
+  padding-left: 1.4rem;
+  font-style: italic;
+  color: var(--blockquote-text-color);
+}
+
+/* Subtle champagne hairline above footer */
+footer {
+  border-top: 1px solid rgba(197, 179, 88, 0.18);
+}
+
+/* Card hover — lift effect */
+.card,
+.card-wrapper,
+.post-preview {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover,
+.card-wrapper:hover,
+.post-preview:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(45, 58, 58, 0.10);
+}
+
+/* Tag pill polish */
+.post-tag,
+a.tag {
+  border: 1px solid var(--card-border-color);
+  padding: 0.18em 0.7em;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.post-tag:hover,
+a.tag:hover {
+  border-color: var(--champagne);
+  color: var(--deep-forest);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(197, 179, 88, 0.32);
+  color: var(--heading-color);
+}
