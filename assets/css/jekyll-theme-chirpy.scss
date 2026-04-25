@@ -381,3 +381,107 @@ html:not([data-mode]) pre code {
   background: transparent;
   color: var(--text-color);
 }
+
+/* ---------- 19. Sidebar fixes ---------- */
+/* Remove stray list bullets */
+#sidebar ul,
+#sidebar ol,
+#sidebar .nav,
+#sidebar nav ul,
+#sidebar nav ol {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+#sidebar li {
+  list-style: none !important;
+  list-style-type: none !important;
+}
+
+#sidebar li::marker { content: '' !important; }
+
+/* Hide the floating scroll indicator (the half-circle next to active nav item) */
+#sidebar .nav-item .nav-link::before,
+#sidebar .nav-item .nav-link::after,
+.sidebar-bottom .icon-border::before,
+.sidebar-bottom .icon-border::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Tagline (site-subtitle) wrap nicely if it ever gets longer */
+#sidebar #site-subtitle,
+#sidebar .site-subtitle {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  word-wrap: break-word;
+  font-size: 0.85em;
+  line-height: 1.4;
+  padding: 0 0.5rem;
+}
+
+/* ---------- 20. 2-column (2x2) post grid on home ---------- */
+#post-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+#post-list > article,
+#post-list > .card-wrapper,
+#post-list > .post-preview {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+/* Make each card a vertical stack (image on top, text below) — works in 2-col layout */
+#post-list .card-wrapper,
+#post-list .post-preview,
+#post-list article.card {
+  flex-direction: column !important;
+  display: flex !important;
+}
+
+#post-list .preview-img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 200px !important;
+  flex: 0 0 auto !important;
+}
+
+#post-list .preview-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+#post-list .post-content,
+#post-list .preview-content {
+  padding: 1rem 1.2rem 1.2rem !important;
+  width: 100% !important;
+}
+
+#post-list .preview-title {
+  font-size: 1.25rem !important;
+  line-height: 1.3 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Single column on small screens */
+@media (max-width: 768px) {
+  #post-list {
+    grid-template-columns: 1fr !important;
+  }
+  #post-list .preview-img {
+    height: 180px !important;
+  }
+}
+
+/* The home page max-width should be wider than the 800px post column to fit 2 cards */
+body[data-spec="home"] #main-wrapper > .container > .row > main,
+body.layout-home #main-wrapper > .container > .row > main {
+  max-width: 980px;
+}
