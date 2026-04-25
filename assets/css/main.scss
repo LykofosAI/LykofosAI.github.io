@@ -1,0 +1,476 @@
+---
+# Front matter required for Jekyll to process this file
+search: false
+---
+
+@charset "utf-8";
+
+/* ============================================================
+   LykofosAI — Minimal Mistakes brand customization
+   Brand-matched to lykofosai.xyz
+   ============================================================ */
+
+/* === 1. Brand color overrides (must be BEFORE @import) === */
+
+$lykofos-bg:           #0f0f1a;
+$lykofos-primary:      #5B2C9D;
+$lykofos-accent:       #9D4EDD;
+$lykofos-accent-light: #D8B4FF;
+$lykofos-pastel-yellow:#FEF08A;
+$lykofos-pastel-blue:  #BAE6FD;
+$lykofos-pastel-pink:  #FBCFE8;
+$lykofos-vibrant-pink: #FF0080;
+
+$background-color:           #0f0f1a;
+$text-color:                 #e6e6f0;
+$muted-text-color:           #a0a0b8;
+$border-color:               rgba(157, 78, 221, 0.22);
+$primary-color:              #9D4EDD;
+$success-color:              #BAE6FD;
+$warning-color:              #FEF08A;
+$danger-color:               #FF0080;
+$info-color:                 #D8B4FF;
+$code-background-color:      rgba(30, 20, 60, 0.55);
+$code-background-color-dark: rgba(30, 20, 60, 0.7);
+$form-background-color:      rgba(30, 20, 60, 0.4);
+$footer-background-color:    #0a0a14;
+$link-color:                 #D8B4FF;
+$link-color-hover:           #FF0080;
+$link-color-visited:         #C8A4F0;
+
+$masthead-link-color:           #ffffff;
+$masthead-link-color-hover:     #FF0080;
+$navicon-link-color-hover:      #FF0080;
+
+/* Fonts */
+$sans-serif:        'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$sans-serif-narrow: 'Orbitron', sans-serif;
+$serif:             'Inter', sans-serif;
+$header-font-family: 'Orbitron', sans-serif;
+$global-font-family: $sans-serif;
+$base-font-family:   $sans-serif;
+$caption-font-family: $sans-serif;
+
+/* === 2. Import skin + theme === */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'dark' }}";
+@import "minimal-mistakes";
+
+/* === 3. Custom overrides AFTER theme load === */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;700;900&display=swap');
+
+/* Body — radial purple-glow background like xyz */
+body {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(91, 44, 157, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 82% 78%, rgba(157, 78, 221, 0.14) 0%, transparent 45%),
+    #{$background-color} !important;
+  background-attachment: fixed;
+  font-family: 'Inter', sans-serif;
+  color: $text-color;
+}
+
+/* === Typography: site title in Orbitron === */
+.site-title,
+.greedy-nav .site-title,
+.masthead .site-title {
+  font-family: 'Orbitron', sans-serif !important;
+  letter-spacing: 0.10em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  text-shadow: 0 0 24px rgba(157, 78, 221, 0.40);
+}
+
+.site-subtitle {
+  font-family: 'Inter', sans-serif !important;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  opacity: 0.85;
+}
+
+/* Article headings — Inter for readability */
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6 {
+  font-family: 'Inter', sans-serif !important;
+  letter-spacing: -0.012em;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.page__content h1 { font-weight: 800; letter-spacing: -0.022em; }
+
+/* Post titles on cards & post page — Orbitron with pastel gradient */
+.archive__item-title,
+.archive__item-title a,
+.page__title {
+  font-family: 'Orbitron', sans-serif !important;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+/* Card titles get the "Light in the Dark" gradient */
+.archive__item-title a {
+  background: linear-gradient(135deg, #BAE6FD 0%, #D8B4FF 60%, #FBCFE8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+.archive__item-title a:hover {
+  background: linear-gradient(135deg, #FEF08A 0%, #FBCFE8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.page__title {
+  color: #ffffff !important;
+}
+
+/* === Glassmorphism masthead === */
+.masthead {
+  background: rgba(15, 15, 26, 0.70) !important;
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  border-bottom: 1px solid rgba(157, 78, 221, 0.18);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.masthead__inner-wrap {
+  background: transparent !important;
+}
+
+/* === Nav pills === */
+.greedy-nav {
+  background: transparent !important;
+}
+
+.greedy-nav a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #d8d8e8;
+  transition: color 0.2s ease;
+}
+
+.greedy-nav a:hover {
+  color: $lykofos-vibrant-pink;
+}
+
+/* === Card grid layout — 2 columns on desktop === */
+.archive {
+  margin-top: 1.5em;
+}
+
+.entries-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .entries-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.grid__item {
+  margin: 0 !important;
+  width: 100% !important;
+  float: none !important;
+}
+
+.grid__item .archive__item-teaser {
+  margin-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  height: 200px;
+}
+
+.grid__item .archive__item-teaser img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid__item .archive__item {
+  background: rgba(30, 20, 60, 0.35);
+  border: 1px solid rgba(157, 78, 221, 0.22);
+  border-radius: 8px;
+  padding: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+
+.grid__item .archive__item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(157, 78, 221, 0.20);
+}
+
+.grid__item .archive__item-title,
+.grid__item .archive__item-excerpt {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.grid__item .archive__item-title {
+  margin-top: 1rem;
+  font-size: 1.15rem;
+}
+
+.grid__item .archive__item-excerpt {
+  font-size: 0.92rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* === Links — lavender → vibrant-pink underline animation in body === */
+.page__content a:not(.btn) {
+  color: $link-color;
+  text-decoration: none;
+  background-image: linear-gradient($lykofos-vibrant-pink, $lykofos-vibrant-pink);
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.28s ease, color 0.2s ease;
+}
+
+.page__content a:not(.btn):hover {
+  background-size: 100% 1.5px;
+  color: $link-color;
+}
+
+/* === Tags / categories === */
+.page__taxonomy-item,
+.taxonomy__index a {
+  border: 1px solid rgba(157, 78, 221, 0.22) !important;
+  background: transparent !important;
+  border-radius: 999px;
+  padding: 0.20em 0.75em;
+  color: $link-color !important;
+  transition: all 0.2s ease;
+}
+
+.page__taxonomy-item:hover,
+.taxonomy__index a:hover {
+  border-color: $lykofos-vibrant-pink !important;
+  background: rgba(255, 0, 128, 0.10) !important;
+  color: $lykofos-vibrant-pink !important;
+}
+
+/* === Buttons === */
+.btn--primary,
+.btn--info,
+.btn--warning,
+.btn--danger,
+.btn--success,
+.btn {
+  background: $lykofos-vibrant-pink !important;
+  border-color: $lykofos-vibrant-pink !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  box-shadow: 0 0 22px rgba(255, 0, 128, 0.35);
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 32px rgba(255, 0, 128, 0.55);
+  transform: translateY(-1px);
+}
+
+/* === Pagination === */
+.pagination {
+  display: flex !important;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 2.5rem auto;
+  flex-wrap: wrap;
+}
+
+.pagination li {
+  list-style: none !important;
+  margin: 0 !important;
+}
+
+.pagination a,
+.pagination span {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.4rem;
+  height: 2.4rem;
+  padding: 0 0.75rem !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(157, 78, 221, 0.22) !important;
+  background: transparent !important;
+  color: $link-color !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500;
+  text-decoration: none !important;
+  background-image: none !important;
+  transition: all 0.2s ease;
+}
+
+.pagination a:hover {
+  border-color: $lykofos-vibrant-pink !important;
+  background: rgba(255, 0, 128, 0.10) !important;
+  color: $lykofos-vibrant-pink !important;
+}
+
+.pagination .current,
+.pagination .current span,
+.pagination li .current,
+.pagination span.current,
+.pagination .active a {
+  background: $lykofos-primary !important;
+  border-color: $lykofos-primary !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 14px rgba(157, 78, 221, 0.40);
+}
+
+/* === Author sidebar === */
+.author__avatar img {
+  border-radius: 50%;
+  border: 2px solid rgba(157, 78, 221, 0.30);
+}
+
+.author__name {
+  font-family: 'Orbitron', sans-serif !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.author__bio {
+  font-style: normal;
+  color: $muted-text-color;
+  line-height: 1.5;
+}
+
+.author__urls a {
+  color: $link-color !important;
+}
+
+.author__urls a:hover {
+  color: $lykofos-vibrant-pink !important;
+}
+
+/* === Code blocks === */
+pre,
+.highlight {
+  background: rgba(30, 20, 60, 0.55) !important;
+  border: 1px solid rgba(157, 78, 221, 0.22);
+  border-radius: 8px;
+}
+
+code {
+  background: rgba(255, 0, 128, 0.08);
+  color: $lykofos-pastel-pink;
+  padding: 0.12em 0.4em;
+  border-radius: 4px;
+  font-family: 'Menlo', 'Consolas', monospace;
+}
+
+pre code {
+  background: transparent;
+  color: $text-color;
+}
+
+/* === Blockquotes === */
+blockquote {
+  border-left: 3px solid $lykofos-accent !important;
+  padding-left: 1.4rem;
+  font-style: italic;
+  color: $lykofos-accent-light;
+}
+
+/* === Scrollbar === */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $background-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $lykofos-primary;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $lykofos-accent;
+}
+
+/* === Selection === */
+::selection {
+  background: rgba(255, 0, 128, 0.34);
+  color: #ffffff;
+}
+
+/* === Footer === */
+.page__footer {
+  background: $footer-background-color !important;
+  color: $muted-text-color;
+  border-top: 1px solid rgba(157, 78, 221, 0.20);
+}
+
+.page__footer a {
+  color: $link-color !important;
+}
+
+.page__footer a:hover {
+  color: $lykofos-vibrant-pink !important;
+}
+
+/* === Reading column max-width on single posts === */
+.page {
+  max-width: 100%;
+}
+
+.page__inner-wrap > .page__content {
+  max-width: 800px;
+}
+
+/* === Images: rounded === */
+.page__content img,
+.archive__item-teaser img {
+  border-radius: 8px;
+}
+
+/* === Misc polish === */
+hr {
+  border-color: rgba(157, 78, 221, 0.20);
+}
+
+.toc {
+  border-color: rgba(157, 78, 221, 0.22) !important;
+  background: rgba(30, 20, 60, 0.30);
+  border-radius: 8px;
+}
+
+.toc__menu a {
+  color: $muted-text-color !important;
+}
+
+.toc__menu a:hover {
+  color: $lykofos-vibrant-pink !important;
+}

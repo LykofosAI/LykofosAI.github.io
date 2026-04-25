@@ -144,19 +144,23 @@ def yaml_quote(s):
 
 tags_yaml = "[" + ", ".join(yaml_quote(t) for t in tags) + "]"
 
+# Minimal Mistakes frontmatter — uses `excerpt` for SEO/preview and
+# `header.teaser` / `header.overlay_image` for the post image.
 lines = [
     "---",
     f"title: {yaml_quote(title)}",
     f"date: {date_display}",
     f"categories: [{yaml_quote(category)}]",
     f"tags: {tags_yaml}",
-    f"description: {yaml_quote(description)}",
+    f"excerpt: {yaml_quote(description)}",
 ]
 if image_url:
     lines += [
-        "image:",
-        f"  path: {image_url}",
-        f"  alt: {yaml_quote(image_alt)}",
+        "header:",
+        f"  teaser: {yaml_quote(image_url)}",
+        f"  overlay_image: {yaml_quote(image_url)}",
+        "  overlay_filter: 0.5",
+        f"  caption: {yaml_quote(image_alt)}",
     ]
 lines += ["---", ""]
 
