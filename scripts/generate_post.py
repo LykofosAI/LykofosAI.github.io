@@ -63,11 +63,51 @@ raw = response.text.strip()
 raw = re.sub(r"^```(?:json)?\s*\n?", "", raw)
 raw = re.sub(r"\n?```\s*$", "", raw)
 
+def parse_gemini_json(text):
+    """
+    Robust JSON parser for Gemini responses.
+    Gemini often returns JSON with literal newlines/tabs inside string values
+    (e.g. multi-paragraph blog content), which is technically invalid JSON.
+    Strategy:
+      1. Try standard parse.
+      2. Try strict=False (allows control chars in strings) — fixes 99% of cases.
+      3. Fallback: escape control chars only inside string values, then parse.
+    """
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+    try:
+        return json.loads(text, strict=False)
+    except json.JSONDecodeError:
+        pass
+    # Last resort: walk the string and escape control chars inside JSON string literals
+    out, in_str, escape = [], False, False
+    for ch in text:
+        if escape:
+            out.append(ch); escape = False; continue
+        if ch == "\\":
+            out.append(ch); escape = True; continue
+        if ch == '"':
+            in_str = not in_str
+            out.append(ch); continue
+        if in_str and ch == "\n":
+            out.append("\\n"); continue
+        if in_str and ch == "\r":
+            out.append("\\r"); continue
+        if in_str and ch == "\t":
+            out.append("\\t"); continue
+        out.append(ch)
+    return json.loads("".join(out), strict=False)
+
+
 try:
-    data = json.loads(raw)
-except json.JSONDecodeError:
-    print("Gemini returned invalid JSON:")
-    print(raw[:500])
+    data = parse_gemini_json(raw)
+except json.JSONDecodeError as e:
+    print(f"::error::Gemini returned invalid JSON that could not be repaired: {e}")
+    print("--- Raw response (first 1000 chars) ---")
+    print(raw[:1000])
+    print("--- End ---")
     raise
 
 title = data["title"].strip()
