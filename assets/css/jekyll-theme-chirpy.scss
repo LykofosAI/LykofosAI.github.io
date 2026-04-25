@@ -443,6 +443,85 @@ p.site-subtitle {
   overflow: visible !important;
 }
 
+/* ---------- 21. Pagination (horizontal pill bar, brand-styled) ---------- */
+.pagination,
+nav.pagination,
+ul.pagination,
+.post-navigation,
+.page-link-wrapper {
+  list-style: none !important;
+  padding-left: 0 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  margin: 2.5rem auto 1.5rem !important;
+  flex-wrap: wrap;
+}
+
+.pagination li,
+ul.pagination li,
+.pagination .page-item {
+  list-style: none !important;
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.pagination li::marker,
+ul.pagination li::marker,
+.pagination .page-item::marker {
+  content: '' !important;
+  display: none !important;
+}
+
+.pagination .page-link,
+.pagination a,
+.pagination span {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 2.4rem;
+  height: 2.4rem;
+  padding: 0 0.75rem !important;
+  border-radius: 999px !important;
+  border: 1px solid var(--card-border-color) !important;
+  background: transparent !important;
+  color: var(--link-color) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  background-image: none !important;
+}
+
+.pagination .page-link:hover,
+.pagination a:hover {
+  border-color: var(--lykofos-vibrant-pink) !important;
+  background: rgba(255, 0, 128, 0.10) !important;
+  color: var(--lykofos-vibrant-pink) !important;
+  transform: translateY(-1px);
+}
+
+.pagination .active .page-link,
+.pagination .page-item.active .page-link,
+.pagination .active a,
+.pagination .active span {
+  background: var(--lykofos-primary) !important;
+  border-color: var(--lykofos-primary) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 14px rgba(157, 78, 221, 0.40);
+}
+
+.pagination .disabled .page-link,
+.pagination .disabled a,
+.pagination .disabled span {
+  opacity: 0.35;
+  pointer-events: none;
+}
+
 /* ---------- 20. 2-column (2x2) post grid on home ---------- */
 #post-list {
   display: grid !important;
