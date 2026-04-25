@@ -12,6 +12,7 @@ from pathlib import Path
 
 import requests
 from google import genai
+from google.genai import types
 
 
 # === Config ===
@@ -47,66 +48,47 @@ Requirements:
 - Practical, actionable content
 - Include one personal anecdote or unique perspective
 - End with a thought-provoking question for readers
+- The "content" field must be the full blog post body in markdown (no title heading, start with the intro paragraph)
+- The "category" field must be exactly one of: AI, Travel, Finance, Lifestyle, Tech
+- The "image_search" field is a 2-3 word search term for a stock photo matching the post theme
+"""
 
-Respond with ONLY valid JSON (no markdown code blocks, no extra text) in this exact format:
-{{
-  "title": "the blog post title (under 60 chars)",
-  "description": "SEO meta description, 140-160 chars",
-  "tags": ["tag1", "tag2", "tag3", "tag4"],
-  "category": "one of: AI, Travel, Finance, Lifestyle, Tech",
-  "image_search": "2-3 word search term for stock photo matching post theme",
-  "content": "full blog post body in markdown, no title heading, start with the intro paragraph"
-}}"""
+# Use Gemini's structured output (response_schema) to guarantee valid JSON.
+# This forces the SDK to return properly-escaped JSON regardless of what
+# special characters (smart quotes, newlines, etc.) appear in the content.
+response_schema = {
+    "type": "OBJECT",
+    "properties": {
+        "title":        {"type": "STRING"},
+        "description":  {"type": "STRING"},
+        "tags":         {"type": "ARRAY", "items": {"type": "STRING"}},
+        "category":     {"type": "STRING"},
+        "image_search": {"type": "STRING"},
+        "content":      {"type": "STRING"},
+    },
+    "required": ["title", "description", "tags", "category", "image_search", "content"],
+    "propertyOrdering": ["title", "description", "tags", "category", "image_search", "content"],
+}
 
-response = client.models.generate_content(model=MODEL_NAME, contents=prompt)
+response = client.models.generate_content(
+    model=MODEL_NAME,
+    contents=prompt,
+    config=types.GenerateContentConfig(
+        response_mime_type="application/json",
+        response_schema=response_schema,
+    ),
+)
+
 raw = response.text.strip()
-raw = re.sub(r"^```(?:json)?\s*\n?", "", raw)
-raw = re.sub(r"\n?```\s*$", "", raw)
-
-def parse_gemini_json(text):
-    """
-    Robust JSON parser for Gemini responses.
-    Gemini often returns JSON with literal newlines/tabs inside string values
-    (e.g. multi-paragraph blog content), which is technically invalid JSON.
-    Strategy:
-      1. Try standard parse.
-      2. Try strict=False (allows control chars in strings) — fixes 99% of cases.
-      3. Fallback: escape control chars only inside string values, then parse.
-    """
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        pass
-    try:
-        return json.loads(text, strict=False)
-    except json.JSONDecodeError:
-        pass
-    # Last resort: walk the string and escape control chars inside JSON string literals
-    out, in_str, escape = [], False, False
-    for ch in text:
-        if escape:
-            out.append(ch); escape = False; continue
-        if ch == "\\":
-            out.append(ch); escape = True; continue
-        if ch == '"':
-            in_str = not in_str
-            out.append(ch); continue
-        if in_str and ch == "\n":
-            out.append("\\n"); continue
-        if in_str and ch == "\r":
-            out.append("\\r"); continue
-        if in_str and ch == "\t":
-            out.append("\\t"); continue
-        out.append(ch)
-    return json.loads("".join(out), strict=False)
-
 
 try:
-    data = parse_gemini_json(raw)
+    data = json.loads(raw)
 except json.JSONDecodeError as e:
-    print(f"::error::Gemini returned invalid JSON that could not be repaired: {e}")
-    print("--- Raw response (first 1000 chars) ---")
-    print(raw[:1000])
+    # With structured output this should essentially never happen, but if it
+    # does we want a loud, clear failure with the raw output preserved for debugging.
+    print(f"::error::Gemini returned invalid JSON despite structured output mode: {e}")
+    print("--- Raw response (first 1500 chars) ---")
+    print(raw[:1500])
     print("--- End ---")
     raise
 
