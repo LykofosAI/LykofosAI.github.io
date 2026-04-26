@@ -32,7 +32,6 @@ Making Claude Code work for non-technical users
 # === AI Automation and Passive Income ===
 The 5 AI automations every solopreneur should set up first
 Make.com vs n8n vs Zapier: an honest 2026 comparison
-Build a fully automated content machine for under 10 dollars a month
 Why most AI automation projects fail and how to fix yours
 The set-and-forget automation stack for ADHD entrepreneurs
 AI agents vs automation: when each one wins
