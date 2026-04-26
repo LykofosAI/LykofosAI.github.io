@@ -112,7 +112,6 @@ Copilot security and compliance: what every employee should know
 Copilot license types explained: M365 vs Pro vs Studio
 Common Copilot mistakes that frustrate new users
 How to train your team on Copilot in one workshop
-The Copilot ROI calculator: proving value to leadership
 
 # === Self-Driving Comparison ===
 Tesla FSD vs Waymo: who actually wins in 2026
