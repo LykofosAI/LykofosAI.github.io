@@ -7,6 +7,12 @@ description: "Beyond rent and kimchi, discover the unexpected financial burdens 
 image:
   path: https://images.pexels.com/photos/31925324/pexels-photo-31925324.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
   alt: "A bustling street in Seoul with people shopping and walking, showcasing urban lifestyle."
+excerpt: "Beyond rent and kimchi, discover the unexpected financial burdens expats face in Seoul. Learn about housing fees, social spending, healthcare gaps, and more to budget smarter."
+header:
+  teaser: "https://images.pexels.com/photos/31925324/pexels-photo-31925324.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+  overlay_image: "https://images.pexels.com/photos/31925324/pexels-photo-31925324.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+  overlay_filter: 0.5
+  caption: "A bustling street in Seoul with people shopping and walking, showcasing urban lifestyle."
 ---
 
 Seoul. The city of endless neon lights, cutting-edge technology, mouth-watering street food, and K-Pop dreams. It's a magnet for expats, drawing in thousands with promises of a vibrant lifestyle and unique cultural experiences. Most blogs and vlogs sing praises of its efficiency, relative safety, and even its affordability compared to other global metropolises. And while much of that is true, there's a side of Seoul's financial reality that often gets overlooked until you're deep into your expatriate journey: the hidden costs. These aren't the obvious rent or grocery bills, but rather the insidious drains on your wallet that accumulate, sometimes quietly, sometimes with a sudden jolt, leaving many expats wondering where all their money went. If you're planning a move or already living here, buckle up. We're about to unveil the expenses that often stay off the mainstream radar.

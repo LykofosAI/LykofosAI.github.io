@@ -7,6 +7,12 @@ description: "Dreaming of a quick escape to Japan from Korea? This guide covers 
 image:
   path: https://images.pexels.com/photos/31418358/pexels-photo-31418358.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
   alt: "Stunning view of Chureito Pagoda with cherry blossoms framing Mount Fuji in spring."
+excerpt: "Dreaming of a quick escape to Japan from Korea? This guide covers flights, budget tips, must-see spots, and cultural insights for your perfect long weekend."
+header:
+  teaser: "https://images.pexels.com/photos/31418358/pexels-photo-31418358.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+  overlay_image: "https://images.pexels.com/photos/31418358/pexels-photo-31418358.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+  overlay_filter: 0.5
+  caption: "Stunning view of Chureito Pagoda with cherry blossoms framing Mount Fuji in spring."
 ---
 
 The land of cherry blossoms, bustling metropolises, serene temples, and culinary delights is practically a stone's throw from South Korea. For many residing in or visiting Korea, Japan offers an irresistible lure for a quick, refreshing getaway. A long weekend—whether it's a public holiday or you strategically take a single day off—is the perfect amount of time to immerse yourself in a slice of Japanese culture without breaking the bank or taking a lengthy vacation. But how do you maximize those precious few days? Fear not, fellow adventurer! This comprehensive guide is tailored to help you craft an unforgettable long weekend trip to Japan from Korea, ensuring every moment counts.

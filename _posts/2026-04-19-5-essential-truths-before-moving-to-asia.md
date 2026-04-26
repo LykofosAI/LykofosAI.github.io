@@ -7,6 +7,12 @@ description: "Dreaming of moving to Asia? Discover 5 crucial insights about bure
 image:
   path: https://images.pexels.com/photos/27300887/pexels-photo-27300887.png?auto=compress&cs=tinysrgb&h=650&w=940
   alt: "A serene moment with a senior enjoying the view of an urban lake surrounded by trees."
+excerpt: "Dreaming of moving to Asia? Discover 5 crucial insights about bureaucracy, culture, food, infrastructure, and patience that will prepare you for an enriching experience abroad."
+header:
+  teaser: "https://images.pexels.com/photos/27300887/pexels-photo-27300887.png?auto=compress&cs=tinysrgb&h=650&w=940"
+  overlay_image: "https://images.pexels.com/photos/27300887/pexels-photo-27300887.png?auto=compress&cs=tinysrgb&h=650&w=940"
+  overlay_filter: 0.5
+  caption: "A serene moment with a senior enjoying the view of an urban lake surrounded by trees."
 ---
 
 The allure of Asia is undeniable. For many, it's a dream destination – a vibrant tapestry of ancient cultures, futuristic skylines, mouth-watering cuisine, and incredible natural beauty. Whether you're chasing career opportunities, seeking adventure, or simply longing for a new beginning, the idea of packing up and moving to this diverse continent holds an almost magnetic pull. I certainly felt it. I envisioned serene temples, bustling markets, and seamless integration into a life brimming with discovery.

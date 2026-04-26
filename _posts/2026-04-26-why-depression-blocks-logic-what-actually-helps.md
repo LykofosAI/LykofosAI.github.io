@@ -7,6 +7,12 @@ description: "Depression makes logical advice feel impossible to follow. Discove
 image:
   path: https://images.pexels.com/photos/29792197/pexels-photo-29792197.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
   alt: "Eerie and serene foggy landscape in Bolu, Türkiye, capturing a lone tree enveloped in mist."
+excerpt: "Depression makes logical advice feel impossible to follow. Discover why the brain resists simple solutions and learn practical, empathetic strategies that truly support recovery."
+header:
+  teaser: "https://images.pexels.com/photos/29792197/pexels-photo-29792197.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+  overlay_image: "https://images.pexels.com/photos/29792197/pexels-photo-29792197.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+  overlay_filter: 0.5
+  caption: "Eerie and serene foggy landscape in Bolu, Türkiye, capturing a lone tree enveloped in mist."
 ---
 
 Imagine being told to simply "run a marathon" when your legs are broken. Or to "just focus" when a siren is blaring right outside your window. For someone experiencing depression, well-intentioned logical advice—like "just go for a walk," "think positive," or "eat healthy"—can feel exactly like this: impossible, insulting, and utterly disconnected from their reality. It's not a lack of willpower; it's a profound shift in brain function that makes even the simplest tasks feel monumental. Understanding *why* this disconnect occurs is the first critical step toward finding truly effective strategies.
