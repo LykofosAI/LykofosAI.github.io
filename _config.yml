@@ -76,7 +76,7 @@ footer:
 
 # Reading
 permalink: /:categories/:title/
-paginate: 4
+paginate: 8
 paginate_path: /page:num/
 timezone: Asia/Seoul
 
