@@ -111,6 +111,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-archives
+  - jekyll-remote-theme
 
 # Archives via jekyll-archives
 jekyll-archives:

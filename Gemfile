@@ -12,6 +12,7 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-include-cache"
   gem "jekyll-archives"
+  gem "jekyll-remote-theme"
 end
 
 gem "html-proofer", "~> 5.0", group: :test
