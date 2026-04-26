@@ -8,10 +8,10 @@ minimal_mistakes_skin: "dark"  # base skin; we override colors in assets/css/mai
 
 # Site
 locale: "en-US"
-title: "LykofosAI"
+title: "Lykofos AI"
 title_separator: "—"
 subtitle: "Living forward."
-name: "LykofosAI"
+name: "Lykofos AI"
 description: >-
   Living forward. Honest dispatches on AI, Tesla, crypto, and the new global life —
   from an AI Adoption Manager living abroad.
@@ -20,7 +20,7 @@ baseurl: ""
 repository: "LykofosAI/LykofosAI.github.io"
 teaser: # /assets/images/default-teaser.jpg
 logo: # path to small logo
-masthead_title: "LYKOFOSAI"
+masthead_title: "Lykofos AI"
 words_per_minute: 200
 
 # Search
