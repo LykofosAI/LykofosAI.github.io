@@ -96,7 +96,6 @@ Measuring AI adoption: the KPIs that actually matter
 The hidden cost of AI tool sprawl in companies
 
 # === ADKAR and Prosci ===
-ADKAR for beginners: change management without the jargon
 Why ADKAR works for AI adoption specifically
 Prosci certification: is it worth it in 2026
 ADKAR vs Kotter's 8 steps: which fits your change
