@@ -56,7 +56,6 @@ Tesla brand premium vs Apple's: the comparison nobody makes
 # === Tesla in Space ===
 Tesla in space: the data center play nobody saw coming
 How orbital data centers solve the AI energy problem
-The economics of solar data centers in orbit
 Why Tesla and SpaceX's relationship is the ultimate moat
 
 # === Vietnam Workation Series ===
