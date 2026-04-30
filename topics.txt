@@ -88,7 +88,6 @@ ADKAR vs Kotter's 8 steps: which fits your change
 Real ADKAR case study: rolling out Copilot to 10000 users
 
 # === Microsoft Copilot Series ===
-Microsoft Copilot 101: your first day with the tool
 Copilot in Word: 10 prompts every writer should know
 Copilot in Excel: stop wasting hours on formulas
 Copilot in Outlook: master email triage in minutes
