@@ -112,7 +112,6 @@ Why Lidar vs vision will be settled by 2027
 Self-driving safety stats: the numbers nobody talks about
 
 # === Robotaxi Economics ===
-Tesla Robotaxi: the trillion-dollar opportunity explained
 Robotaxi unit economics: how much will Tesla actually make per mile
 Why Robotaxi could 10x Tesla's stock price
 Robotaxi vs Uber: the economics that will end ride-sharing
