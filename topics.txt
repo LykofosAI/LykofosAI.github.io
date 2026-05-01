@@ -97,7 +97,6 @@ Copilot Studio: building your first custom agent
 Advanced Copilot prompting: thinking like a power user
 Copilot for managers: weekly reports in 5 minutes
 Copilot security and compliance: what every employee should know
-Copilot license types explained: M365 vs Pro vs Studio
 Common Copilot mistakes that frustrate new users
 How to train your team on Copilot in one workshop
 
