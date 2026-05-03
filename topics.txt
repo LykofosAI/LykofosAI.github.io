@@ -16,7 +16,6 @@ Privacy-first AI: why OpenClaw beats cloud LLMs for sensitive data
 # === Claude Code ===
 How I built a fully automated AI blog with Claude Code in one evening
 The hidden Claude Code features even power users miss
-Claude Code MCPs: extending Claude with custom tools
 From beginner to power user: a Claude Code roadmap
 Claude Code vs the Claude API: when to use which
 Making Claude Code work for non-technical users
