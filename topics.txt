@@ -105,7 +105,6 @@ Self-driving safety stats: the numbers nobody talks about
 
 # === Robotaxi Economics ===
 Robotaxi unit economics: how much will Tesla actually make per mile
-Why Robotaxi could 10x Tesla's stock price
 Robotaxi vs Uber: the economics that will end ride-sharing
 
 # === Tesla Energy Economics ===
