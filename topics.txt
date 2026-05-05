@@ -93,7 +93,6 @@ China's self-driving advantage: BYD, Xpeng, and Huawei explained
 Cadillac Super Cruise: the hidden FSD competitor
 Mercedes Drive Pilot: when is hands-free actually legal
 Nvidia's autonomous platform: the picks-and-shovels play
-Why Lidar vs vision will be settled by 2027
 Self-driving safety stats: the numbers nobody talks about
 
 # === Robotaxi Economics ===
