@@ -81,7 +81,6 @@ ADKAR vs Kotter's 8 steps: which fits your change
 Copilot in Word: 10 prompts every writer should know
 Copilot in Excel: stop wasting hours on formulas
 Copilot in Outlook: master email triage in minutes
-Copilot Chat vs ChatGPT: when to use which at work
 Copilot Studio: building your first custom agent
 Advanced Copilot prompting: thinking like a power user
 Copilot for managers: weekly reports in 5 minutes
