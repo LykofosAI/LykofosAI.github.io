@@ -84,7 +84,6 @@ How to train your team on Copilot in one workshop
 
 # === Self-Driving Comparison ===
 Tesla FSD vs Waymo: who actually wins in 2026
-China's self-driving advantage: BYD, Xpeng, and Huawei explained
 Cadillac Super Cruise: the hidden FSD competitor
 Mercedes Drive Pilot: when is hands-free actually legal
 Nvidia's autonomous platform: the picks-and-shovels play
