@@ -20,7 +20,6 @@ Making Claude Code work for non-technical users
 
 # === AI Automation and Passive Income ===
 The 5 AI automations every solopreneur should set up first
-Make.com vs n8n vs Zapier: an honest 2026 comparison
 AI agents vs automation: when each one wins
 Realistic AI passive income: what actually works in 2026
 Building an AI blog: from zero to first dollar
