@@ -86,7 +86,6 @@ Tesla FSD vs Waymo: who actually wins in 2026
 Cadillac Super Cruise: the hidden FSD competitor
 Mercedes Drive Pilot: when is hands-free actually legal
 Nvidia's autonomous platform: the picks-and-shovels play
-Self-driving safety stats: the numbers nobody talks about
 
 # === Robotaxi Economics ===
 Robotaxi unit economics: how much will Tesla actually make per mile
