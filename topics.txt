@@ -7,7 +7,6 @@ The honest truth about making money with AI in 2026
 
 # === OpenClaw ===
 What is OpenClaw and why every business needs one
-OpenClaw vs ChatGPT Enterprise: which is right for your business
 5 industries that benefit most from OpenClaw deployment
 OpenClaw setup: from zero to running in under an hour
 
