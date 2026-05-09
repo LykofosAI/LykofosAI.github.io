@@ -10,7 +10,6 @@ What is OpenClaw and why every business needs one
 OpenClaw vs ChatGPT Enterprise: which is right for your business
 5 industries that benefit most from OpenClaw deployment
 OpenClaw setup: from zero to running in under an hour
-Privacy-first AI: why OpenClaw beats cloud LLMs for sensitive data
 
 # === Claude Code ===
 The hidden Claude Code features even power users miss
