@@ -13,7 +13,6 @@ OpenClaw setup: from zero to running in under an hour
 # === Claude Code ===
 The hidden Claude Code features even power users miss
 From beginner to power user: a Claude Code roadmap
-Claude Code vs the Claude API: when to use which
 Making Claude Code work for non-technical users
 
 # === AI Automation and Passive Income ===
