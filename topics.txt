@@ -70,7 +70,6 @@ Copilot in Outlook: master email triage in minutes
 Copilot Studio: building your first custom agent
 Advanced Copilot prompting: thinking like a power user
 Copilot for managers: weekly reports in 5 minutes
-Common Copilot mistakes that frustrate new users
 How to train your team on Copilot in one workshop
 
 # === Self-Driving Comparison ===
