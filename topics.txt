@@ -19,7 +19,6 @@ Making Claude Code work for non-technical users
 The 5 AI automations every solopreneur should set up first
 AI agents vs automation: when each one wins
 Realistic AI passive income: what actually works in 2026
-Building an AI blog: from zero to first dollar
 
 # === Tesla FSD and Hardware ===
 HW3 vs HW4 vs HW5: the real differences explained simply
