@@ -50,7 +50,6 @@ Chiang Mai for first-timers: the ultimate guide
 Bangkok in 3 days: the only itinerary you need
 
 # === AI Adoption and Change Management ===
-Why 70 percent of corporate AI rollouts fail and how to be in the 30 percent
 The 5 stages of AI adoption every company goes through
 How to overcome AI resistance from skeptical employees
 AI champions: identifying and empowering them in your organization
