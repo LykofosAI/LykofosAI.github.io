@@ -16,7 +16,6 @@ From beginner to power user: a Claude Code roadmap
 Making Claude Code work for non-technical users
 
 # === AI Automation and Passive Income ===
-The 5 AI automations every solopreneur should set up first
 AI agents vs automation: when each one wins
 Realistic AI passive income: what actually works in 2026
 
