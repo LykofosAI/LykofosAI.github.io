@@ -52,7 +52,6 @@ Prosci certification: is it worth it in 2026
 
 # === Microsoft Copilot Series ===
 Copilot in Word: 10 prompts every writer should know
-Copilot in Excel: stop wasting hours on formulas
 Advanced Copilot prompting: thinking like a power user
 Copilot for managers: weekly reports in 5 minutes
 
