@@ -39,7 +39,6 @@ Bangkok in 3 days: the only itinerary you need
 
 # === AI Adoption and Change Management ===
 The 5 stages of AI adoption every company goes through
-AI champions: identifying and empowering them in your organization
 Measuring AI adoption: the KPIs that actually matter
 The hidden cost of AI tool sprawl in companies
 
