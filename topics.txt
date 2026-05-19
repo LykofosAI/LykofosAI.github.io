@@ -7,7 +7,6 @@ What is OpenClaw and why every business needs one
 
 # === Claude Code ===
 The hidden Claude Code features even power users miss
-Making Claude Code work for non-technical users
 
 # === AI Automation and Passive Income ===
 AI agents vs automation: when each one wins
