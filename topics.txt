@@ -38,7 +38,6 @@ Bangkok in 3 days: the only itinerary you need
 
 # === AI Adoption and Change Management ===
 The 5 stages of AI adoption every company goes through
-The hidden cost of AI tool sprawl in companies
 
 # === ADKAR and Prosci ===
 Why ADKAR works for AI adoption specifically
