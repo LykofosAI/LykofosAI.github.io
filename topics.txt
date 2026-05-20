@@ -52,7 +52,6 @@ Nvidia's autonomous platform: the picks-and-shovels play
 
 # === Robotaxi Economics ===
 Robotaxi unit economics: how much will Tesla actually make per mile
-Robotaxi vs Uber: the economics that will end ride-sharing
 
 # === Tesla Energy Economics ===
 Tesla Energy: the silent giant in Tesla's stock price
