@@ -6,7 +6,6 @@ What is OpenClaw and why every business needs one
 5 industries that benefit most from OpenClaw deployment
 
 # === Claude Code ===
-The hidden Claude Code features even power users miss
 
 # === AI Automation and Passive Income ===
 AI agents vs automation: when each one wins
