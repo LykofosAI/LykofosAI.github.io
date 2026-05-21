@@ -40,7 +40,6 @@ Why ADKAR works for AI adoption specifically
 
 # === Microsoft Copilot Series ===
 Copilot in Word: 10 prompts every writer should know
-Advanced Copilot prompting: thinking like a power user
 
 # === Self-Driving Comparison ===
 Mercedes Drive Pilot: when is hands-free actually legal
