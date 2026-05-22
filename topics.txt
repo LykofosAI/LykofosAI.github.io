@@ -34,7 +34,6 @@ Bangkok in 3 days: the only itinerary you need
 The 5 stages of AI adoption every company goes through
 
 # === ADKAR and Prosci ===
-Why ADKAR works for AI adoption specifically
 
 # === Microsoft Copilot Series ===
 Copilot in Word: 10 prompts every writer should know
