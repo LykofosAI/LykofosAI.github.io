@@ -3,7 +3,6 @@ How to build an automated side business when you have zero free time
 
 # === OpenClaw ===
 What is OpenClaw and why every business needs one
-5 industries that benefit most from OpenClaw deployment
 
 # === Claude Code ===
 
