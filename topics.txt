@@ -7,7 +7,6 @@ What is OpenClaw and why every business needs one
 # === Claude Code ===
 
 # === AI Automation and Passive Income ===
-AI agents vs automation: when each one wins
 
 # === Tesla FSD and Hardware ===
 HW3 vs HW4 vs HW5: the real differences explained simply
