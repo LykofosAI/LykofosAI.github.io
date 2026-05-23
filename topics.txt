@@ -37,7 +37,6 @@ The 5 stages of AI adoption every company goes through
 Copilot in Word: 10 prompts every writer should know
 
 # === Self-Driving Comparison ===
-Mercedes Drive Pilot: when is hands-free actually legal
 Nvidia's autonomous platform: the picks-and-shovels play
 
 # === Robotaxi Economics ===
