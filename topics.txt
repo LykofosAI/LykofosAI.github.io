@@ -40,7 +40,6 @@ Nvidia's autonomous platform: the picks-and-shovels play
 Robotaxi unit economics: how much will Tesla actually make per mile
 
 # === Tesla Energy Economics ===
-Tesla Energy: the silent giant in Tesla's stock price
 
 # === Optimus / Tesla Bot ===
 
