@@ -29,7 +29,6 @@ Krabi vs Phuket: which is better for your trip style
 # === Self-Driving Comparison ===
 
 # === Robotaxi Economics ===
-Robotaxi unit economics: how much will Tesla actually make per mile
 
 # === Tesla Energy Economics ===
 
