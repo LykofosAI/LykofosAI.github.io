@@ -1,4 +1,3 @@
-The expat's guide to Korean banking without losing your mind
 
 # === OpenClaw ===
 
