@@ -1,7 +1,6 @@
 The expat's guide to Korean banking without losing your mind
 
 # === OpenClaw ===
-What is OpenClaw and why every business needs one
 
 # === Claude Code ===
 
