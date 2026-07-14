@@ -61,7 +61,6 @@ AI Content Detection: Can Readers Tell When a Post Is AI-Written?
 The Ethics of Running an AI-Written Blog
 What I Learned Running an AI-Automated Blog for 3 Months
 Why "Set It and Forget It" AI Automation Rarely Works
-AI Agents for Customer Service: What's Actually Working in 2026
 The Truth About AI Hallucinations and How to Catch Them
 Building a Second Brain With AI: My Personal System
 Tesla & SpaceX: Elon's Ultimate Moat
