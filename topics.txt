@@ -163,7 +163,6 @@ What a $5 VPS Can Actually Run in 2026
 Why Cheap Cloud Servers Beat Buying Hardware for Most Side Projects
 The Real Difference Between Claude, GPT, and Gemini for Everyday Use
 How I Chose Which AI Model to Build My Automation Around
-What Happens When Two AI Agents Talk to Each Other
 Why AI Rate Limits Exist (And How to Work Around Them Cheaply)
 The Quiet Rise of AI Browser Agents
 How to Explain AI Agents to Someone Who's Never Used One
