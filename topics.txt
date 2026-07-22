@@ -59,7 +59,6 @@ How to Build a Simple AI Workflow With n8n (No Coding Needed)
 AI Content Detection: Can Readers Tell When a Post Is AI-Written?
 The Ethics of Running an AI-Written Blog
 Why "Set It and Forget It" AI Automation Rarely Works
-The Truth About AI Hallucinations and How to Catch Them
 Building a Second Brain With AI: My Personal System
 Tesla & SpaceX: Elon's Ultimate Moat
 Tesla Robotaxi: Unpacking the Unit Economics per Mile
