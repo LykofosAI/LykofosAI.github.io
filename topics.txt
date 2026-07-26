@@ -35,7 +35,6 @@
 
 How AI Agents Actually Work: A Plain-English Breakdown
 The Difference Between a Chatbot and an AI Agent
-Why Every AI Model Suddenly Has "Agentic" Capabilities
 5 AI Tools That Quietly Save Me Hours Every Week
 What MCP (Model Context Protocol) Means for the Future of AI Apps
 Is Prompt Engineering Still a Real Skill in 2026?
