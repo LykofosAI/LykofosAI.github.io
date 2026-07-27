@@ -144,7 +144,6 @@ Why Cheap Cloud Servers Beat Buying Hardware for Most Side Projects
 The Real Difference Between Claude, GPT, and Gemini for Everyday Use
 How I Chose Which AI Model to Build My Automation Around
 Why AI Rate Limits Exist (And How to Work Around Them Cheaply)
-How to Explain AI Agents to Someone Who's Never Used One
 What I'd Tell Myself Before Building My First AI Automation
 The Real Difference Between a Script and an "Agent"
 How AI Is Quietly Changing Customer Support Jobs
