@@ -130,7 +130,6 @@ Reflecting on a Year of Living and Working in Korea
 Why Every AI Startup Suddenly Needs an "Agent" in Its Pitch
 The Difference Between RAG and Fine-Tuning, Explained Simply
 How AI Coding Assistants Changed My Workflow as a Non-Developer
-What a $5 VPS Can Actually Run in 2026
 Why Cheap Cloud Servers Beat Buying Hardware for Most Side Projects
 The Real Difference Between Claude, GPT, and Gemini for Everyday Use
 How I Chose Which AI Model to Build My Automation Around
