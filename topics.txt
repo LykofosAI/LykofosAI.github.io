@@ -125,7 +125,6 @@ The Hardest Part of Living Abroad Nobody Warns You About
 Why I Write Publicly About Money, AI, and Life Abroad
 Reflecting on a Year of Living and Working in Korea
 Why Every AI Startup Suddenly Needs an "Agent" in Its Pitch
-The Difference Between RAG and Fine-Tuning, Explained Simply
 How AI Coding Assistants Changed My Workflow as a Non-Developer
 Why Cheap Cloud Servers Beat Buying Hardware for Most Side Projects
 The Real Difference Between Claude, GPT, and Gemini for Everyday Use
