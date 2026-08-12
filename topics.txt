@@ -111,7 +111,6 @@ Why I Write Publicly About Money, AI, and Life Abroad
 Reflecting on a Year of Living and Working in Korea
 How AI Coding Assistants Changed My Workflow as a Non-Developer
 Why Cheap Cloud Servers Beat Buying Hardware for Most Side Projects
-How I Chose Which AI Model to Build My Automation Around
 What I'd Tell Myself Before Building My First AI Automation
 How AI Is Quietly Changing Customer Support Jobs
 What Happens to Content Creators When AI Video Gets Good Enough
