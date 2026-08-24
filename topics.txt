@@ -33,7 +33,6 @@
 
 # === Cross-pollination ===
 
-How AI Agents Actually Work: A Plain-English Breakdown
 What MCP (Model Context Protocol) Means for the Future of AI Apps
 Is Prompt Engineering Still a Real Skill in 2026?
 How I Automated My Blog With AI (And What Broke)
