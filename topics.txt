@@ -33,7 +33,6 @@
 
 # === Cross-pollination ===
 
-How I Automated My Blog With AI (And What Broke)
 The Real ROI of AI Tools for Small Businesses
 5 AI Automation Mistakes I Made So You Don't Have To
 Local AI Models vs Cloud APIs: Which One Actually Makes Sense for You
